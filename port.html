@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Santhosh M — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#7c3aed; --muted:#9ca3af; --glass: rgba(255,255,255,0.04);
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial; margin:0; background:linear-gradient(180deg,#071028 0%,#081027 40%); color:#e6eef8; -webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:40px auto;padding:28px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:120px;height:120px;border-radius:18px;background:linear-gradient(135deg,var(--accent),#0ea5a3);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:36px;color:white;box-shadow:0 6px 30px rgba(124,58,237,0.18);flex:none}
+    .intro h1{margin:0;font-size:28px;letter-spacing:-0.4px}
+    .intro p{margin:6px 0;color:var(--muted)}
+    .cta{margin-top:12px;display:flex;gap:10px}
+    .btn{background:var(--accent);padding:10px 14px;border-radius:10px;color:white;text-decoration:none;font-weight:600;box-shadow:0 6px 18px rgba(124,58,237,0.18)}
+    .ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px 14px;border-radius:10px;color:var(--muted);text-decoration:none}
+
+    main{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-top:28px}
+    .card{background:linear-gradient(180deg,var(--card),rgba(8,13,23,0.6));border-radius:14px;padding:18px;box-shadow:0 10px 40px rgba(2,6,23,0.6)}
+    h2{margin:0 0 12px 0;font-size:18px}
+    .section{margin-bottom:14px}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:var(--glass);padding:6px 10px;border-radius:10px;font-size:13px;color:var(--muted)}
+
+    .timeline{display:flex;flex-direction:column;gap:12px}
+    .job{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));border:1px solid rgba(255,255,255,0.03)}
+    .job h3{margin:0;font-size:15px}
+    .job p{margin:6px 0 0 0;color:var(--muted);font-size:13px}
+
+    .projects{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .project{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));border:1px solid rgba(255,255,255,0.03)}
+    .project h4{margin:0 0 6px 0;font-size:14px}
+    .meta{font-size:12px;color:var(--muted)}
+
+    aside .contact p{margin:6px 0;color:var(--muted);font-size:14px}
+    .links{display:flex;gap:8px;flex-wrap:wrap}
+    .chip{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:10px;font-size:13px}
+
+    footer{text-align:center;margin-top:28px;color:var(--muted);font-size:13px}
+
+    @media (max-width:980px){main{grid-template-columns:1fr;}
+      .avatar{width:96px;height:96px;font-size:28px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">SM</div>
+      <div class="intro">
+        <h1>Santhosh M — Full Stack Developer & AI Enthusiast</h1>
+        <p>B.E. Computer Science (2022-2026) • Passionate about building full-stack web apps, AI tools & data-driven dashboards.</p>
+        <div class="cta">
+          <a class="btn" href="mailto:santhoshmurugaesan1995@gmail.com">Email Me</a>
+          <a class="ghost" href="#projects">View Projects</a>
+          <a class="ghost" href="#contact">Contact</a>
+        </div>
+        <div style="margin-top:10px;color:var(--muted);font-size:13px">📱 +91 63811 21535 • <a style="color:#dbeafe;text-decoration:none" href="https://github.com/SanthoshMurugaesan2005" target="_blank">GitHub</a> • <a style="color:#dbeafe;text-decoration:none" href="https://www.linkedin.com/in/santhosh-murugaesan-209815373" target="_blank">LinkedIn</a></div>
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <section class="card section">
+          <h2>About</h2>
+          <p style="color:var(--muted);line-height:1.5">I build responsive web applications and AI-enabled tools. Experienced with React, Node.js, MySQL/MongoDB, Python for ML, and deployment workflows. I enjoy turning ideas into production-ready projects and learning modern tooling.</p>
+        </section>
+
+        <section id="projects" class="card section">
+          <h2>Selected Projects</h2>
+          <div class="projects">
+            <article class="project">
+              <h4>BMS System (B.E. Project)</h4>
+              <div class="meta">AI & ML • VS Code • Real-time battery monitoring</div>
+              <p style="color:var(--muted);font-size:13px;margin-top:8px">Sensors monitor voltage & temperature; system balances cells and disconnects load when needed for safety and efficiency.</p>
+            </article>
+
+            <article class="project">
+              <h4>TICT AI (Tamil)</h4>
+              <div class="meta">Full-Stack • OCR & Speech-to-Text • VS Code</div>
+              <p style="color:var(--muted);font-size:13px;margin-top:8px">Uploads image or voice and converts Tamil/English into editable Tamil text — useful for research and digitization.</p>
+            </article>
+
+            <article class="project">
+              <h4>Smart Time Table Generator</h4>
+              <div class="meta">Full-Stack • Conflict-free scheduling</div>
+              <p style="color:var(--muted);font-size:13px;margin-top:8px">Generates printable timetables from subject, lab hours and staff inputs.</p>
+            </article>
+
+            <article class="project">
+              <h4>Smart Question Paper Generator</h4>
+              <div class="meta">Full-Stack • Auto-formatting • Word export</div>
+              <p style="color:var(--muted);font-size:13px;margin-top:8px">Automatically shuffles question banks and produces unique exam papers downloadable as Word docs.</p>
+            </article>
+
+          </div>
+        </section>
+
+        <section class="card section">
+          <h2>Experience</h2>
+          <div class="timeline">
+            <div class="job">
+              <h3>Full Stack Developer Trainee — Cognifyz Technology, Nagpur</h3>
+              <p>Trained in JavaScript, PHP/Node.js, SQL. Built real-time web apps and followed Agile workflows.</p>
+            </div>
+            <div class="job">
+              <h3>Full Stack Intern — Codveta Technologies, Pune</h3>
+              <p>Worked with React, Node.js, MySQL. Integrated APIs and performed performance optimizations.</p>
+            </div>
+            <div class="job">
+              <h3>Data Analyst Intern — Code Alpha, Chennai</h3>
+              <p>Data cleaning & reporting using SQL and Excel; created summary reports for stakeholders.</p>
+            </div>
+            <div class="job">
+              <h3>Web Developer Intern — Brassy Academy, Tirunelveli</h3>
+              <p>Built responsive pages with HTML, CSS, JavaScript and Bootstrap; improved UI/UX.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card section">
+          <h2>Education</h2>
+          <p style="margin:0;font-weight:600">B.E. — Computer Science & Engineering (2022–2026)</p>
+          <p style="margin:6px 0;color:var(--muted)">Renganayagi Varatharaj College of Engineering • CGPA: 92% (upto 6th sem)</p>
+        </section>
+
+        <section class="card section">
+          <h2>Achievements & Certifications</h2>
+          <ul style="margin:0;padding-left:18px;color:var(--muted);line-height:1.5">
+            <li>National level symposium representation & multiple hackathon awards (2024–2025)</li>
+            <li>Full Stack Bootcamp, JavaScript & Cloud training, Power BI, AI/ML certifications (2024–2025)</li>
+            <li>Mongo Certification (ICT Academy) & AI&ML (Redington Foundation)</li>
+          </ul>
+        </section>
+      </div>
+
+      <aside>
+        <div class="card contact section">
+          <h2>Contact</h2>
+          <p>Email: <a href="mailto:santhoshmurugaesan1995@gmail.com">santhoshmurugaesan1995@gmail.com</a></p>
+          <p>Phone: +91 63811 21535</p>
+          <div style="margin-top:12px">
+            <div class="links">
+              <a class="chip" href="https://github.com/SanthoshMurugaesan2005" target="_blank">GitHub</a>
+              <a class="chip" href="https://www.linkedin.com/in/santhosh-murugaesan-209815373" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card section">
+          <h2>Skills</h2>
+          <div class="skills">
+            <span class="skill">JavaScript</span>
+            <span class="skill">React</span>
+            <span class="skill">Node.js</span>
+            <span class="skill">Python</span>
+            <span class="skill">MySQL</span>
+            <span class="skill">MongoDB</span>
+            <span class="skill">HTML & CSS</span>
+            <span class="skill">Bootstrap</span>
+            <span class="skill">AI/ML</span>
+            <span class="skill">Power BI</span>
+          </div>
+        </div>
+
+        <div class="card section">
+          <h2>Quick Facts</h2>
+          <p class="meta">DOB: 06-May-2005</p>
+          <p class="meta">Languages: Tamil, English</p>
+          <p class="meta">Location: Virudhunagar District, Tamil Nadu, India</p>
+        </div>
+
+        <div id="contact" class="card section">
+          <h2>Get in touch</h2>
+          <p style="color:var(--muted);font-size:14px">Prefer email? Use the button below to open your mail client with a prefilled subject.</p>
+          <a class="btn" href="mailto:santhoshmurugaesan1995@gmail.com?subject=Opportunity%20to%20connect">Email Santhosh</a>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      Designed &amp; maintained by Santhosh M • <span style="color:var(--muted)">Resume: M.SANTHOSH_CSE_2026.docx</span>
+    </footer>
+  </div>
+
+  <script>
+    // Smooth in-page scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault(); const t = document.querySelector(a.getAttribute('href'));
+        if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
+      })
+    })
+  </script>
+</body>
+</html>
